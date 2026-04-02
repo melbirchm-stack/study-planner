@@ -3,54 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A comprehensive planner designed to help Mel study effectively.">
-    <title>Mel's Study Planner</title>
-    <link rel="manifest" href="/manifest.json">
-    <style>
-        /* Add all your inline styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .navbar {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        .tabs {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            background-color: #ddd;
-        }
-        .tab {
-            margin: 0 10px;
-            padding: 10px;
-            cursor: pointer;
-            background: white;
-            border-radius: 5px;
-        }
-        /* Additional styles... */
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Study Planner</title>
 </head>
 <body>
-    <div class="navbar">
-        <h1>Welcome to Mel's Study Planner</h1>
-    </div>
+    <nav class="navbar">
+        <h1>Study Planner</h1>
+        <ul>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#laq-guide">LAQ Guide</a></li>
+            <li><a href="#notes-sheet">Notes Sheet</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#strategies">Strategies</a></li>
+        </ul>
+    </nav>
+
     <div class="tabs">
-        <div class="tab">Home</div>
-        <div class="tab">Subjects</div>
-        <div class="tab">Resources</div>
+        <div id="schedule" class="tab-container">
+            <h2>Schedule</h2>
+            <!-- Schedule content goes here -->
+        </div>
+        <div id="laq-guide" class="tab-container">
+            <h2>LAQ Guide</h2>
+            <!-- LAQ guide content goes here -->
+        </div>
+        <div id="notes-sheet" class="tab-container">
+            <h2>Notes Sheet</h2>
+            <!-- Notes sheet content goes here -->
+        </div>
+        <div id="videos" class="tab-container">
+            <h2>Videos</h2>
+            <!-- Videos content goes here -->
+        </div>
+        <div id="strategies" class="tab-container">
+            <h2>Strategies</h2>
+            <!-- Strategy content goes here -->
+        </div>
     </div>
-    <main>
-        <h2>Your Study Plan</h2>
-        <p>Build your study plan here...</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Mel's Study Planner</p>
-    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
