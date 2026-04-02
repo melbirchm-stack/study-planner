@@ -1,70 +1,36 @@
-// Complete Study Data
 const WEEKS = [
-    { week: 1, topics: ['HTML', 'CSS'] },
-    { week: 2, topics: ['JavaScript', 'DOM Manipulation'] },
-    { week: 3, topics: ['React', 'State Management'] },
-    { week: 4, topics: ['Node.js', 'Express'] },
+  { week: 1, topics: [/* topics for week 1 */] },
+  { week: 2, topics: [/* topics for week 2 */] },
+  { week: 3, topics: [/* topics for week 3 */] },
+  { week: 4, topics: [/* topics for week 4 */] },
+  { week: 5, topics: [/* topics for week 5 */] },
+  { week: 6, topics: [/* topics for week 6 */] },
+  { week: 7, topics: [/* topics for week 7 */] },
+  { week: 8, topics: [/* topics for week 8 */] },
+  { week: 9, topics: [/* topics for week 9 */] },
 ];
 
-const LAQ_DATA = [
-    { question: 'What is HTML?', answer: 'HTML stands for HyperText Markup Language.' },
-    { question: 'What is CSS?', answer: 'CSS stands for Cascading Style Sheets.' },
-];
+const LAQ_DATA = {
+  CNS: [/* CNS data */],
+  Respiratory: [/* Respiratory data */],
+  Renal: [/* Renal data */],
+  GIT: [/* GIT data */],
+};
 
-const SHEET_DATA = [
-    { title: 'Weekly Schedule', contents: WEEKS },
-];
+const SHEET_DATA = [/* Sheet data */];
+const STRATEGY_DATA = [/* Strategy data */];
+const VIDEO_DATA = [/* Video data */];
 
-const STRATEGY_DATA = [
-    { strategy: 'Practice Daily' },
-    { strategy: 'Focus on Projects' },
-];
-
-const VIDEO_DATA = [
-    { title: 'Introduction to Web Development', url: 'https://www.example.com/video1' },
-];
-
-// Render Functions
-function renderSchedule() {
-    // Logic to render the schedule
+function renderFunctions() { 
+  // All render functions go here
 }
 
-function renderLAQ() {
-    // Logic to render LAQs
-}
-
-function renderSheet() {
-    // Logic to render sheets
-}
-
-function renderVideos() {
-    // Logic to render videos
-}
-
-function renderStrategy() {
-    // Logic to render strategies
-}
-
-function showTab(tabName) {
-    // Logic to show the specified tab
-}
-
-// Service Worker Registration
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
-            console.log('Service Worker registered with scope:', registration.scope);
-        }).catch((error) => {
-            console.error('Service Worker registration failed:', error);
-        });
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      console.log('Service Worker registered with scope:', registration.scope);
+    }, function(error) {
+      console.log('Service Worker registration failed:', error);
     });
+  });
 }
-
-// DOM Initialization
-document.addEventListener('DOMContentLoaded', () => {
-    renderSchedule();
-    renderLAQ();
-    renderSheet();
-    renderVideos();
-    renderStrategy();
-});
